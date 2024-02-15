@@ -35,6 +35,4 @@ public class PlayerStats {
     public int getPlayerAGL() {
         return  playerAGL;
     }
-
-
 }

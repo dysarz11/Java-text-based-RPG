@@ -1,3 +1,4 @@
+//This program uses java 21.0.1
 public class Main {
     public static void main(String[] args) {
         int hpTest;
@@ -6,6 +7,7 @@ public class Main {
         int aglTest;
 
         PlayerStats playerStats = new PlayerStats();
+        EnemyStats enemyStats = new EnemyStats();
 
         playerStats.setPlayerHP(20);
         playerStats.setPlayerSTR(3);
@@ -16,6 +18,7 @@ public class Main {
         strTest = playerStats.getPlayerSTR();
         dexTest = playerStats.getPlayerDEX();
         aglTest = playerStats.getPlayerAGL();
+
         System.out.println(hpTest + "\n" + strTest + "\n" + dexTest + "\n" + aglTest);
     }
 }
