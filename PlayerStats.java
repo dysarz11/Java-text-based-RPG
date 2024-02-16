@@ -23,12 +23,20 @@ public class PlayerStats {
         playerHP = hp;
     }
 
+    public void addPlayerHP(int playerHPIncrease) {
+        this.playerHP += playerHPIncrease;
+    }
+
     public int getPlayerHP() {
         return  playerHP;
     }
 
     public void setPlayerSTR(int str) {
-        playerSTR = str;
+        this.playerSTR = str;
+    }
+
+    public void addPlayerSTR(int playerSTRIncrease) {
+        this.playerSTR += playerSTRIncrease;
     }
 
     public int getPlayerSTR() {
@@ -36,7 +44,11 @@ public class PlayerStats {
     }
 
     public void setPlayerDEX(int dex) {
-        playerDEX = dex;
+        this.playerDEX = dex;
+    }
+
+    public void addPlayerDEX(int playerDEXIncrease) {
+        this.playerDEX += playerDEXIncrease;
     }
 
     public int getPlayerDEX() {
@@ -44,7 +56,11 @@ public class PlayerStats {
     }
 
     public void setPlayerAGL(int agl) {
-        playerAGL = agl;
+        this.playerAGL = agl;
+    }
+
+    public void addPlayerAGL(int playerAGLIncrease) {
+        this.playerAGL += playerAGLIncrease;
     }
 
     public int getPlayerAGL() {
