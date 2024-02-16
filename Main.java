@@ -13,10 +13,7 @@ public class Main {
         Attack attack = new Attack();
         LevelSystem levels = new LevelSystem();
 
-        playerStats.setPlayerHP(25);
-        playerStats.setPlayerSTR(3);
-        playerStats.setPlayerDEX(3);
-        playerStats.setPlayerAGL(5);
+        levels.makeStartingPlayerStats(playerStats);
 
         enemyStats.setEnemyHP(30);
         enemyStats.setEnemySTR(5);
