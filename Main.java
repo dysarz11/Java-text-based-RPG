@@ -10,17 +10,18 @@ public class Main {
         EnemyStats enemyStats = new EnemyStats();
         GameLoop gameLoop = new GameLoop();
         Dice dice = new Dice();
+        Attack attack = new Attack();
 
-        playerStats.setPlayerHP(20);
+        playerStats.setPlayerHP(25);
         playerStats.setPlayerSTR(3);
         playerStats.setPlayerDEX(3);
-        playerStats.setPlayerAGL(4);
+        playerStats.setPlayerAGL(5);
 
         enemyStats.setEnemyHP(30);
         enemyStats.setEnemySTR(5);
         enemyStats.setEnemyDEX(2);
         enemyStats.setEnemyAGL(1);
 
-        gameLoop.combatLoop(playerStats, enemyStats);
+        gameLoop.combatLoop(playerStats, enemyStats, attack, rand, dice, kb);
     }
 }
