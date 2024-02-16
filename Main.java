@@ -21,5 +21,6 @@ public class Main {
         enemyStats.setEnemyAGL(1);
 
         gameLoop.combatLoop(playerStats, enemyStats, attack, rand, dice, kb);
+        levels.playerLevelUp();
     }
 }
