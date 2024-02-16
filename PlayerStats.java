@@ -31,6 +31,18 @@ public class PlayerStats {
         return  playerHP;
     }
 
+    public void setPlayerDefense(int playerDefense) {
+        this.playerDefense = playerDefense;
+    }
+
+    public void addPlayerDefense(int playerDefenseIncrease) {
+        this.playerDefense += playerDefenseIncrease;
+    }
+
+    public int getPlayerDefense() {
+        return playerDefense;
+    }
+
     public void setPlayerSTR(int str) {
         this.playerSTR = str;
     }
@@ -65,5 +77,41 @@ public class PlayerStats {
 
     public int getPlayerAGL() {
         return  playerAGL;
+    }
+
+    public void setPlayerINT(int playerINT) {
+        this.playerINT = playerINT;
+    }
+
+    public void addPlayerINT(int playerINTIncrease) {
+        this.playerINT += playerINTIncrease;
+    }
+
+    public int getPlayerINT() {
+        return playerINT;
+    }
+
+    public void setPlayerFTH(int playerFTH) {
+        this.playerFTH = playerFTH;
+    }
+
+    public void addPlayerFTH(int playerFTHIncrease) {
+        this.playerFTH += playerFTHIncrease;
+    }
+
+    public int getPlayerFTH() {
+        return playerFTH;
+    }
+
+    public void setPlayerLuck(int playerLuck) {
+        this.playerLuck = playerLuck;
+    }
+
+    public void addPlayerLuck(int playerLuckIncrease) {
+        this.playerLuck += playerLuckIncrease;
+    }
+
+    public int getPlayerLuck() {
+        return playerLuck;
     }
 }
