@@ -19,8 +19,8 @@ public class PlayerStats {
         playerLuck = -1;
     }
 
-    public void setPlayerHP(int hp) {
-        playerHP = hp;
+    public void setPlayerHP(int playerHP) {
+        this.playerHP = playerHP;
     }
 
     public void addPlayerHP(int playerHPIncrease) {
@@ -43,8 +43,8 @@ public class PlayerStats {
         return playerDefense;
     }
 
-    public void setPlayerSTR(int str) {
-        this.playerSTR = str;
+    public void setPlayerSTR(int playerSTR) {
+        this.playerSTR = playerSTR;
     }
 
     public void addPlayerSTR(int playerSTRIncrease) {
@@ -55,8 +55,8 @@ public class PlayerStats {
         return  playerSTR;
     }
 
-    public void setPlayerDEX(int dex) {
-        this.playerDEX = dex;
+    public void setPlayerDEX(int playerDEX) {
+        this.playerDEX = playerDEX;
     }
 
     public void addPlayerDEX(int playerDEXIncrease) {
@@ -67,8 +67,8 @@ public class PlayerStats {
         return  playerDEX;
     }
 
-    public void setPlayerAGL(int agl) {
-        this.playerAGL = agl;
+    public void setPlayerAGL(int playerAGL) {
+        this.playerAGL = playerAGL;
     }
 
     public void addPlayerAGL(int playerAGLIncrease) {
