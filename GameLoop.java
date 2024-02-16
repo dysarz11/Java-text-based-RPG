@@ -9,7 +9,8 @@ public class GameLoop {
     private int enemySTR;
     private int enemyDEX;
     private int enemyAGL;
-
+    private int playerDamage;
+    private int enemyDamage;
     private void PullStats(PlayerStats playerStats, EnemyStats enemyStats) {
         playerSTR = playerStats.getPlayerSTR();
         playerDEX = playerStats.getPlayerDEX();
@@ -20,22 +21,20 @@ public class GameLoop {
         enemyAGL = enemyStats.getEnemyAGL();
     }
     public void combatLoop(PlayerStats playerStats, EnemyStats enemyStats, Attack attack, Random rand, Dice dice, Scanner kb) {
-        int playerDamage;
-        int enemyAttack;
         int playerHP = playerStats.getPlayerHP();
         int enemyHP = enemyStats.getEnemyHP();
 
         PullStats(playerStats, enemyStats);
         do {
             System.out.println("Player attack");
-            playerDamage = attack.attackResult(playerSTR, playerDEX, playerAGL, rand, dice);
+            this.playerDamage = attack.attackResult(playerSTR, playerDEX, playerAGL, rand, dice);
             System.out.println("You did " + playerDamage + " damage!\n");
             enemyHP -= playerDamage;
 
             System.out.println("Enemy attack");
-            enemyAttack = attack.attackResult(enemySTR, enemyDEX, enemyAGL, rand, dice);
-            System.out.println("The enemy did " + enemyAttack + " damage!\n");
-            playerHP -= enemyAttack;
+            this.enemyDamage = attack.attackResult(enemySTR, enemyDEX, enemyAGL, rand, dice);
+            System.out.println("The enemy did " + enemyDamage + " damage!\n");
+            playerHP -= enemyDamage;
         } while (playerHP > 0 && enemyHP > 0);
 
         if (playerHP > 0) {
