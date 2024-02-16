@@ -11,6 +11,7 @@ public class Main {
         GameLoop gameLoop = new GameLoop();
         Dice dice = new Dice();
         Attack attack = new Attack();
+        LevelSystem levels = new LevelSystem();
 
         playerStats.setPlayerHP(25);
         playerStats.setPlayerSTR(3);
