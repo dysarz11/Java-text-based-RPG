@@ -26,10 +26,20 @@ public class LevelSystem {
         return XP;
     }
 
-    public void playerLevelUp() {
+    public void playerLevelUp(PlayerStats playerStats) {
         if (XP >= 10) {
             this.playerLevel++;
             this.XP = 0;
+
+            System.out.println("You are now level" + this.playerLevel);
+            System.out.println("You have 8 stat points to allocate \n");
+            System.out.println("current stats");
+            System.out.println("STR: " + playerStats.getPlayerSTR());
+            System.out.println("DEX: " + playerStats.getPlayerDEX());
+            System.out.println("AGL: " + playerStats.getPlayerAGL());
+            System.out.println("INT: " + playerStats.getPlayerINT());
+            System.out.println("FTH: " + playerStats.getPlayerFTH());
+            System.out.println("LUCK: " + playerStats.getPlayerLuck() + "\n");
         }
     }
 }

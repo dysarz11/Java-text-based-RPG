@@ -20,7 +20,10 @@ public class Main {
         enemyStats.setEnemyDEX(2);
         enemyStats.setEnemyAGL(1);
 
-        gameLoop.combatLoop(playerStats, enemyStats, attack, rand, dice, kb, levels);
-        levels.playerLevelUp();
+        //repeat battle 10 times
+        for (int i = 0; i < 100; i++) {
+            gameLoop.combatLoop(playerStats, enemyStats, attack, rand, dice, kb, levels);
+            levels.playerLevelUp(playerStats);
+        }
     }
 }
