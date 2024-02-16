@@ -9,6 +9,7 @@ public class Main {
         PlayerStats playerStats = new PlayerStats();
         EnemyStats enemyStats = new EnemyStats();
         GameLoop gameLoop = new GameLoop();
+        Dice dice = new Dice();
 
         playerStats.setPlayerHP(20);
         playerStats.setPlayerSTR(3);
