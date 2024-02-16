@@ -20,7 +20,7 @@ public class GameLoop {
         enemyDEX = enemyStats.getEnemyDEX();
         enemyAGL = enemyStats.getEnemyAGL();
     }
-    public void combatLoop(PlayerStats playerStats, EnemyStats enemyStats, Attack attack, Random rand, Dice dice, Scanner kb) {
+    public void combatLoop(PlayerStats playerStats, EnemyStats enemyStats, Attack attack, Random rand, Dice dice, Scanner kb, LevelSystem levelSystem) {
         int playerHP = playerStats.getPlayerHP();
         int enemyHP = enemyStats.getEnemyHP();
 
@@ -38,7 +38,11 @@ public class GameLoop {
         } while (playerHP > 0 && enemyHP > 0);
 
         if (playerHP > 0) {
+            int newXP = rand.nextInt(3) + 1;
+            levelSystem.addXP(newXP);
             System.out.println("Enemy is dead, You win!");
+            System.out.println("You gained " + newXP + "XP!");
+            System.out.println("Total XP: " + levelSystem.getXP());
         }
         else {
             System.out.println("You died");

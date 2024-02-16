@@ -20,7 +20,7 @@ public class Main {
         enemyStats.setEnemyDEX(2);
         enemyStats.setEnemyAGL(1);
 
-        gameLoop.combatLoop(playerStats, enemyStats, attack, rand, dice, kb);
+        gameLoop.combatLoop(playerStats, enemyStats, attack, rand, dice, kb, levels);
         levels.playerLevelUp();
     }
 }
