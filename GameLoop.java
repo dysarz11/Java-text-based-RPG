@@ -12,6 +12,7 @@ public class GameLoop {
     private int playerDamage;
     private int enemyDamage;
     private void PullStats(PlayerStats playerStats, EnemyStats enemyStats) {
+
         playerSTR = playerStats.getPlayerSTR();
         playerDEX = playerStats.getPlayerDEX();
         playerAGL = playerStats.getPlayerAGL();
